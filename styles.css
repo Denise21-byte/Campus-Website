@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+/* Navigation */
+.navbar {
+    position: sticky;
+    top: 0;
+    background: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: #34495e;
+    list-style: none;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Sticky Notice */
+.sticky-notice {
+    position: sticky;
+    top: 50px;
+    background: #f1c40f;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Sections */
+.section {
+    padding: 40px 20px;
+}
+
+.section h2 {
+    margin-bottom: 10px;
+}
+
+/* Cards */
+.card-container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    background: #ecf0f1;
+    padding: 20px;
+    flex: 1;
+    border-radius: 5px;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Notices */
+.notice {
+    background: #e74c3c;
+    color: white;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+/* Display Behavior */
+.display-box {
+    padding: 15px;
+    margin-top: 10px;
+    background: #3498db;
+    color: white;
+}
+
+.hidden-box {
+    display: none;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
