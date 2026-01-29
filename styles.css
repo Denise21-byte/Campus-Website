@@ -121,3 +121,12 @@ footer {
     text-align: center;
     padding: 10px;
 }
+@media screen and (max-width: 320px) {
+    .card-container {
+        flex-direction: column;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap:10px;
+    
+}
