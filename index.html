@@ -5,23 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header>
     <nav class="navbar">
-        <div class="logo">Gishushu campus</div>
+        <div class="logo">Kacyiru campus</div>
+       
+           
         <ul class="nav-links">
-            <li><a href="#intro">Home</a></li>
-            <li class="dropdown">
-                <a href="#">Campus Info ▾</a>
-                <ul class="dropdown-menu">
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#gallery">Locations</a></li>
-                    <li><a href="#announcements">Announcements</a></li>
-                </ul>
-            </li>
-            <li><a href="#display">Display</a></li>
+    <li><a href="#intro"><i class="fas fa-home"></i> Home</a></li>
+
+    <li class="dropdown">
+        <a href="#"><i class="fas fa-university"></i> Campus Info ▾</a>
+        <ul class="dropdown-menu">
+            <li><a href="#services"><i class="fas fa-handshake"></i> Services</a></li>
+            <li><a href="#gallery"><i class="fas fa-map-marker-alt"></i> Locations</a></li>
+            <li><a href="#announcements"><i class="fas fa-bullhorn"></i> Announcements</a></li>
         </ul>
+    </li>
+
+    <li><a href="#display"><i class="fas fa-eye"></i> Display</a></li>
+</ul>
+
     </nav>
 </header>
 
@@ -48,24 +54,24 @@
 </section>
 
 <section id="services" class="section">
-    <h2>Campus Services</h2>
+    <h2><i class="fas fa-handshake"></i>Campus Services</h2>
     <p>These services support students throughout their academic journey.</p>
 
     <div class="card-container">
         <div class="card">
-            <h3>Library</h3>
+            <h3><i class="fas fa-book"></i>Library</h3>
             <p>Access books, study spaces, and research materials.</p>
         </div>
         <div class="card">
-            <h3>Health Center</h3>
+            <h3><i class="fas fa-heartbeat"></i>Health Center</h3>
             <p>Medical and wellness services for students.</p>
         </div>
         <div class="card">
-            <h3>IT Support</h3>
+            <h3><i class="fas fa-laptop"></i>IT Support</h3>
             <p>Technical assistance and digital resources.</p>
         </div>
          <div class="card">
-            <h3>Career Services</h3>
+            <h3><i class="fas fa-briefcase"></i>Career Services</h3>
             <p>Career guidance, internships, and job placement support.</p>
         </div>
     </div>
@@ -75,7 +81,7 @@
 
 
 <section id="gallery" class="section">
-    <h2>Campus Locations</h2>
+    <h2><i class="fas fa-map-location-dot"></i>Campus Locations</h2>
     <p>Explore some important places around the campus.</p>
 
     <div class="gallery">
@@ -86,7 +92,7 @@
 </section>
 
 <section id="announcements" class="section">
-    <h2>Announcements & Notices</h2>
+    <h2><i class="fas fa-bullhorn"></i>Announcements & Notices</h2>
     <p>Stay informed about important updates.</p>
 
     <div class="notice">
@@ -98,11 +104,33 @@
 </section>
 
 <section id="display" class="section">
-    <h2>Display Behavior</h2>
+    <h2><i class="fas fa-eye"></i>Display Behavior</h2>
     <p>This section demonstrates different display and visibility behaviors.</p>
 
     <div class="display-box visible-box">Visible Element</div>
     <div class="display-box hidden-box">Hidden Element</div>
+</section>
+
+<section class="section">
+    <h2><i class="fas fa-chart-column"></i> Campus at a Glance</h2>
+    <p>Quick facts about Kacyiru Campus.</p>
+
+    <div class="card-container">
+        <div class="card">
+            <h3>5,000+</h3>
+            <p>Enrolled Students</p>
+        </div>
+
+        <div class="card">
+            <h3>30+</h3>
+            <p>Academic Programs</p>
+        </div>
+
+        <div class="card">
+            <h3>15</h3>
+            <p>Campus Buildings</p>
+        </div>
+    </div>
 </section>
 
 </main>
