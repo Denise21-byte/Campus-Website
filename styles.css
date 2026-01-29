@@ -121,12 +121,70 @@ footer {
     text-align: center;
     padding: 10px;
 }
-@media screen and (max-width: 320px) {
+@media (max-width: 900px) {
+
+    /* Stack cards nicely */
+    .card-container {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        min-width: 250px;
+    }
+
+    /* Reduce section padding */
+    .section {
+        padding: 30px 15px;
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 600px) {
+
+    /* Navbar becomes vertical */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links a {
+        padding: 12px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    /* Dropdown menu full width */
+    .dropdown-menu {
+        position: static;
+        width: 100%;
+    }
+
+    /* Sticky notice adjustment */
+    .sticky-notice {
+        top: 0;
+        font-size: 14px;
+    }
+
+    /* Cards take full width */
     .card-container {
         flex-direction: column;
     }
-    .nav-links {
-        flex-direction: column;
-        gap:10px;
-    
+
+    /* Text alignment for small screens */
+    h1, h2 {
+        text-align: center;
+    }
+
+    /* Gallery images spacing */
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    footer {
+        font-size: 14px;
+    }
 }
